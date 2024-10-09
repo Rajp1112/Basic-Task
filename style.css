@@ -116,6 +116,7 @@
 }
 .container .row .col .State_Prop{
    color: white;
+   font-weight: bold;
 }
 
 /* Info Section */
