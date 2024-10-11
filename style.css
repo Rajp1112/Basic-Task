@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  
+
+    
+    font-family: "Montserrat", sans-serif;
+  
+}
+
 .myCard {
   background-color: transparent;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   left: 250px;
   position: absolute;
@@ -37,6 +47,7 @@
 
 .navSection {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
   list-style: none;
@@ -73,7 +84,6 @@
   color: white;
 }
 
-
 .navSection .button1 .btn2 {
   background-color: rgb(158, 99, 214);
   padding: 10px;
@@ -83,6 +93,7 @@
   display: flex;
   justify-content: space-around;
   position: relative;
+  flex-wrap: wrap;
 }
 .heroSection img {
   height: 80%;
@@ -125,6 +136,7 @@
   margin-top: 41px;
   padding-top: 200px;
   display: flex;
+  flex-wrap: wrap;
   background-color: #26335d;
   flex-direction: column;
 }
@@ -151,7 +163,8 @@
 
 .infoSection .container .row {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .infoSection .container .row .col {
@@ -190,8 +203,9 @@
 .productSection {
   background-color: #26335d;
   display: flex;
-  padding-left: 200px;
-  justify-content: left;
+  flex-wrap: wrap;
+  /* padding-left: 200px; */
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -218,11 +232,13 @@
   display: flex;
   justify-content: left;
   text-decoration: none;
-  color: rgb(158, 99, 214);
+  /* color: rgb(158, 99, 214); */
   padding-bottom: 5px;
   font-weight: bold;
 }
-
+.brandLogo a h1 {
+  color: white;
+}
 .card-body p {
   font-size: 15px;
   color: rgb(30, 30, 30);
@@ -231,11 +247,14 @@
   text-align: left;
 }
 .productSection .productPrize {
-  color: rgb(155, 150, 150);
+  
+  text-align: start;
 }
 
 .productSection .productPrize span {
   color: orangered;
+  text-decoration: none;
+  font-size: 18px;
 }
 .productSection button {
   display: flex;
@@ -246,9 +265,17 @@
   font-size: 13px;
   font-weight: bold;
 }
+.mainRow {
+  display: flex;
+  justify-content: space-between;
+}
+.mainCol {
+  display: flex;
+  justify-content: center;
+  padding: 0;
 
-.secondCardSection {
-  background-color: #8ec2f2;
+  padding: 0 0;
+  flex-wrap: wrap;
 }
 
 /* 2 */
@@ -260,6 +287,7 @@
 
 .productSection .cardIconMain {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
   padding-left: 0;
@@ -283,10 +311,12 @@
   flex-direction: column;
   text-align: center;
   padding-left: 30px;
+  margin-left: 5%;
 }
 
 .productSection .checkBox label {
   display: flex;
+  padding-left: 15px;
 }
 .productSection .courseCardText p {
   display: flex;
@@ -295,7 +325,9 @@
   padding-top: 5px;
   color: #737373;
 }
-
+.productSection .courseCardText li {
+  font-size: 20px;
+}
 .productSection .courseCardPrize {
   font-size: 30px;
   font-weight: bold;
@@ -305,6 +337,13 @@
   color: #8ec2f2;
   font-weight: 500;
   padding-top: 0;
+}
+.productSection .form-check-input:checked {
+  background-color: #74ba74;
+  border: none;
+  border-radius: 20px;
+  height: 20px;
+  width: 20px;
 }
 
 .productSection .courseCardText a {
@@ -320,11 +359,17 @@
 .expertFaculty {
   display: flex;
   background-color: #26335d;
-  justify-content: left;
-  padding: 200px;
+
+  padding: 50px;
+
   flex-direction: column;
 }
 
+.expertFaculty .row .col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 .expertFaculty .list {
   color: rgb(158, 99, 214);
   list-style: none;
@@ -337,11 +382,6 @@
 .expertFaculty .para {
   color: white;
 }
-
-.facultyCard1 {
-  padding: 70px;
-  border-radius: 20px;
-}
 .photo {
   display: flex;
   justify-content: center;
@@ -353,17 +393,22 @@
   border-radius: 100%;
 }
 .facultyText p {
-  display: flex;
+  /* display: flex; */
   padding-top: 15px;
   justify-content: center;
   text-align: center;
   font-size: 15px;
 }
 .star {
-  color: rgb(189, 189, 105);
+  /* color: rgb(189, 189, 105); */
   display: flex;
   justify-content: center;
 }
+
+.checked {
+  color: #F3CD03;
+}
+
 .listName {
   display: flex;
   justify-content: center;
@@ -383,6 +428,7 @@
 }
 .contactText {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   text-align: center;
@@ -416,6 +462,8 @@
 .footerSection {
   background-color: #26335d;
   padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .columns {
   display: flex;
@@ -448,11 +496,17 @@
   color: rgb(158, 99, 214);
 }
 
+
 /* slide Show */
 .slideShow {
   animation: slideShow linear;
   animation-timeline: view();
   animation-range: entry 0 cover 30%;
+}
+.slideShow1 {
+  animation: slideShow linear;
+  animation-timeline: view();
+  animation-range: entry 0 cover 20%;
 }
 
 @keyframes slideShow {
@@ -465,5 +519,30 @@
     opacity: 1;
     scale: 1;
     transform: translateY(1);
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .myCard .cardSection {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    top: 600px;
+    left: 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .mainCol {
+    padding-top: 30px;
+  }
+
+  .facultyCard1 {
+    display: flex;
+
+    flex-direction: column;
+  }
+  .facultyCard {
+    padding-top: 10px;
   }
 }
