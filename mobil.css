@@ -1,0 +1,31 @@
+@media (max-width:560px) {
+    .mainCol{
+        padding-top: 15px;
+    }
+    .heroSection {
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .text {
+        margin: 0;
+        text-align: center;
+      }
+      .mycard2{
+        display: flex;
+        justify-content: center;
+        right: 0;
+      }
+    
+     
+    
+      .stateSection {
+        margin: 0;
+        flex-direction: column;
+        padding-top:100%;
+      }
+      .container .row {
+        flex-direction: column;
+      }
+}
