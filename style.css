@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-  
-
-    
-    font-family: "Montserrat", sans-serif;
-  
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .myCard {
@@ -38,11 +37,6 @@
 
   background-image: url("hero\ shape\ 8.png");
   background-color: #26335d;
-}
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .navSection {
@@ -247,7 +241,6 @@
   text-align: left;
 }
 .productSection .productPrize {
-  
   text-align: start;
 }
 
@@ -406,7 +399,7 @@
 }
 
 .checked {
-  color: #F3CD03;
+  color: #f3cd03;
 }
 
 .listName {
@@ -496,7 +489,6 @@
   color: rgb(158, 99, 214);
 }
 
-
 /* slide Show */
 .slideShow {
   animation: slideShow linear;
@@ -523,26 +515,43 @@
 }
 
 
-@media only screen and (max-width: 500px) {
-  .myCard .cardSection {
-    display: flex;
+@media (max-width: 768px) {
+  .heroSection {
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .text {
+    margin: 0;
+    text-align: center;
+  }
+  .myCard {
+    display: flex;
     flex-wrap: wrap;
-    top: 600px;
-    left: 0;
-  }
-}
-@media only screen and (max-width: 960px) {
-  .mainCol {
-    padding-top: 30px;
+    float: none;
+    flex-direction: column;
+    left: 28%;
+    /* position: absolute; */
+    animation: slideShow linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    top: 750px;
   }
 
-  .facultyCard1 {
+  .cardSection {
     display: flex;
-
+    justify-content: center;
+    /* margin: auto; */
     flex-direction: column;
   }
-  .facultyCard {
-    padding-top: 10px;
+
+  .stateSection {
+    margin: 0;
+    flex-direction: column;
+    padding-top: 100%;
+  }
+  .container .row {
+    flex-direction: column;
   }
 }

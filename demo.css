@@ -1,0 +1,104 @@
+/* .myCard {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    left: 250px;
+    position: absolute;
+    animation: slideShow linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    top: 600px;
+    padding: 10px;
+  } */
+
+
+
+
+  @media only screen and (max-width: 960px) {
+    .myCard {
+      display: flex;
+      flex-wrap: wrap;
+      /* justify-content: center; */
+      flex-direction: column;
+      left: 25%;
+      /* position: absolute; */
+      animation: slideShow linear;
+      animation-timeline: view();
+      animation-range: entry 0 cover 40%;
+      top: 650px;
+    }
+    .cardSection {
+      display: flex;
+      justify-content: center;
+      /* margin: auto; */
+      flex-direction: column;
+      padding-top: 500px;
+    }
+    .stateSection {
+      margin: 0;
+      flex-direction: column;
+      padding-top: 100%;
+    }
+  
+    .mainCol {
+      padding-top: 30px;
+    }
+  
+    .facultyCard1 {
+      display: flex;
+  
+      flex-direction: column;
+    }
+    .facultyCard {
+      padding-top: 10px;
+    }
+  }
+  
+
+
+  /* @media (max-width: 480px) { */
+  /* .heroSection {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .text {
+    margin: 0;
+    text-align: center;
+  } */
+  /* .myCard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* left: 0px; */
+    /* position: absolute;
+    animation: slideShow linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    top: 750px; */
+  /* } */
+
+  /* .cardSection {
+    display: flex;
+    justify-content: center;
+    /* margin: auto; */
+    /* flex-direction: column;
+    left: 10px;
+  }  */
+
+  /* .stateSection {
+    margin: 0;
+    flex-direction: column;
+    padding-top: 100%;
+    animation: slideShow linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+  }
+  .container .row {
+    flex-direction: column;
+    padding-top: 500px;
+  }
+} */
