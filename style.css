@@ -463,6 +463,12 @@
 }
 .columns {
   display: flex;
+  flex-wrap: wrap;
+}
+.columns .col {
+  /* display: flex; */
+  flex-wrap: wrap;
+  padding: 30px;
 }
 .columns h1 {
   font-size: 20px;
@@ -517,6 +523,14 @@
   }
 }
 
+
+
+
+
+
+
+
+/* Media Quieries */
 @media (max-width: 1080px){
   .mainCol{
     padding: 15px 0;
@@ -563,7 +577,18 @@
     flex-direction: column;
     /* padding-top: 75%; */
   }
-}
+   /* .columns{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+   } */
+
+   .inputField{
+    width: 100%;
+   }
+   
+ }
 
 @media (max-width: 768px) {
   .mainCol{
@@ -609,8 +634,21 @@
   }
   .container .row {
     flex-direction: column;
-    /* padding-top: 75%; */
+    padding-top: 50%;
   }
+  /* .columns{
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+   } */
+
+   .inputField{
+    width: 100%;
+   }
+   .inputField button{
+    padding: 0;
+   }
+   
 }
 @media (max-width: 480px) {
   .mainCol{
@@ -656,8 +694,24 @@
   }
   .container .row {
     flex-direction: column;
-    padding-top: 75%;
+    padding-top: 100%;
   }
+
+  /* .columns{
+   flex-direction: column;
+   flex-wrap: wrap;
+   
+  }
+  .columns .col{
+
+  } */
+
+  .inputField{
+    width: 100%;
+   }
+   .inputField button{
+    padding: 0;
+   }
 }
 
 
