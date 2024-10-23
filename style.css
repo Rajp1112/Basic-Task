@@ -4,8 +4,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  /* background-color: #26335d; */
+
   ::-webkit-scrollbar {
-    width: 20px;
+    width: 6px;
   }
   
   /* Track */
@@ -26,108 +28,63 @@
   }
 }
 
-.myCard {
-  background-color: transparent;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* left: 250px; */
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  animation: slideShow linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%;
-  top: 600px;
-  padding: 10px;
-}
-.cardChild {
-  margin: 20px;
-}
-
-#header::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* position: fixed; */
-  background-repeat: no-repeat;
-  background-size: 60% 100%;
-  z-index: -1;
-
-  background-image: url("hero\ shape\ 8.png");
+.mainSection{
   background-color: #26335d;
-}
-
-.navSection {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-  list-style: none;
-  padding: 20px;
-}
-.brandLogo {
-  font-size: 25px;
-  color: white;
-}
-
-.navSection button {
-  color: white;
-}
-
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#navbar li {
-  list-style: none;
-  padding: 0 11px;
-  position: relative;
-}
-
-#navbar li a {
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-}
-
-.navSection .button1 button {
-  color: white;
-}
-
-.navSection .button1 .btn2 {
-  background-color: rgb(158, 99, 214);
-  padding: 10px;
-  font-size: 15px;
-}
-.heroSection {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  flex-wrap: wrap;
-}
-.heroSection img {
-  height: 80%;
-  width: 80%;
-}
-.text {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  margin: 160px;
-  color: white;
 }
 
-.heroButton .heroButton1 {
-  background-color: rgb(158, 99, 214);
-  color: white;
+
+
+.hero{
+  background-color: #26335d;
+  background-image: url(hero\ shape\ 8.png);
+  background-repeat: no-repeat;
+  background-size: 50% 100vh;
+  z-index: 1;
+}
+.hero .mainHero{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  .mainHero{
+      flex-direction: column;
+      padding-top:20px ;
+  }
+}
+.hero .row img{
+  height: 450px;
+  width: 80%;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  padding-left:100px ;
+  padding-right: 100px;
+  align-items: center;
+  
+}
+.navMenu ul {
+  display: flex;
+  background-color: transparent;
+  text-align: center;
 }
 
+.navMenu ul li{
+  margin-right:50px ;
+  list-style: none;
+}
+.navMenu ul li a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 .cardLogo {
   display: flex;
   justify-content: center;
@@ -135,23 +92,14 @@
   width: 30px;
   align-items: center;
 }
-.logo {
-  display: flex;
-  padding-left: 16px;
-  padding-top: 16px;
-}
 
-.cardSection {
-  display: flex;
-  justify-content: space-evenly;
-  margin: auto;
-}
+
+
 
 /* State section */
 
 .stateSection {
-  margin-top: 41px;
-  padding-top: 200px;
+  
   display: flex;
   flex-wrap: wrap;
   background-color: #26335d;
@@ -163,6 +111,7 @@
   justify-content: space-between;
   text-align: center;
   padding: 50px;
+  /* margin-bottom: 15px; */
 }
 .container .row .col h1 {
   color: rgb(158, 99, 214);
@@ -244,6 +193,7 @@
 .card-body h5 {
   display: flex;
   justify-content: left;
+
 }
 .card-body a {
   display: flex;
@@ -552,46 +502,13 @@
 
 /* Media Quieries */
 @media (max-width: 1080px){
-  .mainCol{
-    padding: 15px 0;
-  }
-  .heroSection {
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-  }
+  
 
-  .text {
-    margin: 0;
-    text-align: center;
-  }
-  .myCard {
-    display: flex;
-    flex-wrap: wrap;
-    float: none;
-    flex-direction: column;
-    /* left: 35%; */
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    /* position: absolute; */
-    animation: slideShow linear;
-    animation-timeline: view();
-    animation-range: entry 0 cover 40%;
-    top: 750px;
-  }
-
-  .cardSection {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    flex-direction: column;
-  }
 
   .stateSection {
     margin: 0;
     flex-direction: column;
-    padding-top: 100%;
+    /* padding-top: 100%  ; */
   }
   .container .row {
     flex-direction: column;
@@ -639,7 +556,9 @@
     animation-range: entry 0 cover 40%;
     top: 750px;
   }
-
+  .ham{
+    display: block;
+  }
   .cardSection {
     display: flex;
     justify-content: center;
@@ -678,6 +597,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+  }
+
+  .ham{
+    display: block;
   }
 
   .text {
@@ -732,6 +655,8 @@
    .inputField button{
     padding: 0;
    }
+
+ 
 }
 
 
