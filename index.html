@@ -21,47 +21,63 @@
 <body>
 
     <div class="mainSection">
+        
         <section>
-            <div class="hero">
-                <div class="navbar d-flex" >
-                    <div class="logoSection" style="color: white;">
-                        <h1>Logo</h1>
-                    </div>
-                    <div class="navMenu">
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#product">Product</a></li>
-                            <li><a href="#price">Price</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="navBtn">
-                        <button class="btn">Login</button>
-                        <button class="btn">JOIN US</button>
-                    </div>
-                </div>
+            
+            <div class="hero" id="home">
+                  <nav class="navbar outerNav navbar-expand-lg navbar-light" style="width: 100%; position: fixed;top: 0;z-index: 999;">
+                      <div class="container-fluid">
+                        <a class="navbar-brand" href="#" >LOGO</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link " aria-current="page" href="#home" >Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#product" >Product</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#price" >Price</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#contact" >Contact</a>
+                            </li>
+                           
+                          </ul>
+                          <div class="navBtn">
+                              <button class="btn btn-outline-danger">Login</button>
+                              <button class="btn btn-outline-primary">JOIN US &#8594;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+            
+               
         
                 <div class="container">
                     <div class="row">
                         <div class="mainHero d-flex">
         
-                            <div class="col">
-                                <h2 class="" style="padding-bottom: 10px; color: white; font-size: 15px; text-align: left; padding-left: 100px;">For Better Future</h2>
-                                <h1 class="pb-2" style="padding-bottom: 1px; color: white; font-size: 40px; text-align: left; padding-left: 100px;">25K+ Students</h1>
-                                <h1 class="pb-2" style="padding-bottom: 10px; color: white; font-size: 40px; text-align: left; padding-left: 100px;">TRUST US</h1>
-                                <p class="pb-4" style="padding-bottom: 10px; color: white; text-align: left; font-size: 18px; padding-left: 100px;">Our goal is to make online education <br>work for everyone</p>
-                                <div class="" style=" text-align: start; font-size: 18px; padding-left: 100px;">
+                            <div class="col" style="padding-top: 100px;">
+                                <h2 class="" style="padding-bottom: 10px; color: white; font-size: 15px; text-align: left; ">For Better Future</h2>
+                                <h1 class="pb-2" style="padding-bottom: 1px; color: white; font-size: 40px; text-align: left; ">25K+ Students</h1>
+                                <h1 class="pb-2" style="padding-bottom: 10px; color: white; font-size: 40px; text-align: left; ">TRUST US</h1>
+                                <p class="pb-4" style="padding-bottom: 10px; color: white; text-align: left; font-size: 18px; ">Our goal is to make online education <br>work for everyone</p>
+                                <div class="" style=" text-align: start; font-size: 18px; ">
                                     
-                                    <button type="button" class="btn btn-outline-primary">Get Quate Now</button>
+                                    <button type="button" class="btn btn-outline-secondary">Get Quate Now</button>
                                     <button type="button" class="btn btn-outline-primary">Learn More</button>
                                 </div>
                             </div>
-                            <div class="col">
+                            <div class="col girlImg">
                                 <img src="none.png" alt="">
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="  myCard" style="padding: 80px;">
+                        <div class="row gx-0" >
+                            <div class="  myCard" >
                                 <div class="cardSection" style="display: flex;justify-content: space-around; text-align: left;flex-wrap: wrap; ">
                     
                                     <div class="card p-2 cardChild" style="width: 18rem; border-radius: 10px;">
@@ -180,11 +196,23 @@
             <div class="container slideShow">
                 <div class="row ">
                     <div class="col mainCol">
-                    <div class="card" style="width: 15rem; border-radius: 20px;">
-                        <img src="Product_img1.png" class="card-img-top"
-                        style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
+                    <div class="card" style="width: 15rem; border-radius: 20px;position: relative;" >
+                        <div style="position: relative;">
+
+                            <img src="Product_img1.png" class="card-img-top"
+                            style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
+                            
+                        </div>
+                        <div style="position: absolute; top: 10px;left: 10px;border: 2px solid red; padding: 5px;background-color: red;color: white;font-weight: bold;border-radius: 10px;" >Sale</div>
+                        <div class="productNavigator" style="position: absolute;top: 200px;left: 35px; margin: 20px; ">
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: px;background-color: white;padding: 5px;" class="fa">&#xf004;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: px;background-color: white;padding: 5px;" class="fa">&#xf07a;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: px;background-color: white;padding: 5px;" class='fas'>&#xf06e;</i>
+                            
+                         </div>
                         
                         <div class="card-body">
+                            
                             
                             <div class="productPrize">
                                 <p class="card-text"
@@ -213,11 +241,20 @@
                 </div>
                 <div class="col mainCol">
                     <div class="card" style="width: 15rem; border-radius: 20px">
-                        <img src="product-cover-131.png" class="card-img-top"
-                        style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
-                        <div class="icons">
-                            
+                        <div>
+
+                            <img src="product-cover-131.png" class="card-img-top"
+                            style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
                         </div>
+                        <div style="position: absolute; top: 10px;left: 10px;border: 2px solid red; padding: 5px;background-color: red;color: white;font-weight: bold;border-radius: 10px;" >Sale</div>
+ 
+                        <div class="productNavigator" style="position: absolute;top: 200px;left: 35px; margin: 20px; ">
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf004;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf07a;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class='fas'>&#xf06e;</i>
+                            
+                         </div>
+
                         <div class="card-body">
                             <div class="productPrize">
                                 <p class="card-text"
@@ -246,8 +283,18 @@
                 </div>
                 <div class="col mainCol">
                     <div class="card" style="width: 15rem; border-radius: 20px">
-                        <img src="Product_img3.png" class="card-img-top"
+                        <div>
+
+                            <img src="Product_img3.png" class="card-img-top"
                             style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
+                        </div>
+                        <div style="position: absolute; top: 10px;left: 10px;border: 2px solid red; padding: 5px;background-color: red;color: white;font-weight: bold;border-radius: 10px;" >Sale</div>
+                        <div class="productNavigator" style="position: absolute;top: 200px;left: 35px; margin: 20px; ">
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf004;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class='fas'>&#xf06e;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf07a;</i>
+                            
+                         </div>
                         <div class="card-body">
                             <div class="productPrize">
                                 <p class="card-text"
@@ -274,8 +321,19 @@
                 </div>
                 <div class="col mainCol">
                     <div class="card" style="width: 15rem; border-radius: 20px">
-                        <img src="Product_img4.png" class="card-img-top"
+                        <div>
+
+                            <img src="Product_img4.png" class="card-img-top"
                             style="border-top-left-radius: 20px ;border-top-right-radius: 20px;" alt="...">
+                        </div>
+                        <div style="position: absolute; top: 10px;left: 10px;border: 2px solid red; padding: 5px;background-color: red;color: white;font-weight: bold;border-radius: 10px;" >Sale</div>
+ 
+                        <div class="productNavigator" style="position: absolute;top: 200px;left: 35px; margin: 20px; ">
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf004;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class="fa">&#xf07a;</i>
+                            <i style="font-size:24px; border: 2px solid white; border-radius: 100%;margin-right: 3px;background-color: white;padding: 5px;" class='fas'>&#xf06e;</i>
+                            
+                         </div>
                         <div class="card-body">
                             <div class="productPrize">
                                 <p class="card-text"
@@ -445,7 +503,7 @@
                 <div class="col mainCol">
                     <div class="card cardMain" style="border-radius: 20px; width: 300px;margin: 0; position: relative;">
                         <div class="new"
-                            style="position: absolute; border-radius: 100%; top:-30px;right: -50px; background-color: #E77C40; height: 80px;width: 80px; display: block;text-align: center;">
+                            style="position: absolute; border-radius: 100%; top:-30px;right: 0px; background-color: #E77C40; height: 80px;width: 80px; display: block;text-align: center;">
                             <li
                                 style="text-decoration: none; font-size: 20px; padding-top: 27%; color: white;font-weight: bold;">
                                 New</li>
@@ -676,35 +734,35 @@
     <section class="footerSection">
         <div class="container columns slideShow1">
 
-            <div class="col">
+            <div class="col" style="cursor: pointer;">
                 <h1>Company Info</h1>
                 <li>About Us</li>
                 <li>Carrier</li>
                 <li>We are hiring</li>
                 <li>Blog</li>
             </div>
-            <div class="col">
+            <div class="col"style="cursor: pointer;">
                 <h1>Legal</h1>
                 <li>About Us</li>
                 <li>Carrier</li>
                 <li>We are hiring</li>
                 <li>Blog</li>
             </div>
-            <div class="col">
+            <div class="col"style="cursor: pointer;">
                 <h1>Features</h1>
                 <li>About Us</li>
                 <li>Carrier</li>
                 <li>We are hiring</li>
                 <li>Blog</li>
             </div>
-            <div class="col">
+            <div class="col"style="cursor: pointer;">
                 <h1>Resources</h1>
                 <li>About Us</li>
                 <li>Carrier</li>
                 <li>We are hiring</li>
                 <li>Blog</li>
             </div>
-            <div class="col">
+            <div class="col"style="cursor: pointer;">
                 <h1>Get In Touch</h1>
                 <li><i class='fas fa-phone'></i>&nbsp; 0123456789</li>
                 <li><i class='fas fa-map-marker-alt'></i>&nbsp; Sukan mall ,Science city</li>

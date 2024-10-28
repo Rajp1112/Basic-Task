@@ -12,7 +12,23 @@
     padding: 10px;
   } */
 
-
+  <div class="navbar d-flex" >
+  <div class="logoSection" style="color: white;">
+      <h1>Logo</h1>
+  </div>
+  <div class="navMenu">
+      <ul style="padding-left: 0;">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#product">Product</a></li>
+          <li><a href="#price">Price</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+  </div>
+  <div class="navBtn">
+      <button class="btn btn-outline-danger">Login</button>
+      <button class="btn btn-outline-primary">JOIN US &#8594;</button>
+  </div>
+</div>
 
 
   @media only screen and (max-width: 960px) {
