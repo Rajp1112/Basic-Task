@@ -50,6 +50,7 @@
       background-color: white;
     }
 }
+
 .mainSection {
   background-color: #26335d;
   display: flex;
@@ -277,6 +278,7 @@
   width: 70px;
   border-radius: 100%;
   padding: 0;
+
 }
 .productSection .checkBox {
   font-size: 15px;
@@ -489,6 +491,7 @@
   animation-range: entry 0 cover 20%;
 }
 
+
 @keyframes slideShow {
   from {
     opacity: 0;
@@ -500,6 +503,21 @@
     scale: 1;
     transform: translateY(1);
   }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-30%);
+  opacity: 0.5;
+  }
+  to { transform: translateX(0);
+  opacity: 1; }
+}
+@keyframes slideOut {
+  from { transform: translateX(30%);
+  opacity: 0.5;
+  }
+  to { transform: translateX(0%);
+  opacity: 1; }
 }
 
 /* Media Quieries */
@@ -607,7 +625,9 @@
     justify-content: center;
     text-align: center;
   }
-
+  .hero{
+    background-image: none;
+  }
   .navMenu ul {
     display: flex;
     flex-wrap: wrap;
