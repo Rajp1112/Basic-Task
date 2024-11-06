@@ -27,14 +27,13 @@
     background: #b30000;
   }
 }
-.logoSec{
+.logoSec {
   /* margin-right: 30rem;
   margin-left: 10rem; */
   font-size: 30px;
   text-decoration: none;
- 
 }
-.outerNav{
+.outerNav {
   display: none;
 }
 
@@ -43,12 +42,12 @@
     color: white;
   }
   1% {
-    background-color: white;
+    background-color: rgb(86, 83, 83);
     color: black;
-    }
-    100%{
-      background-color: white;
-    }
+  }
+  100% {
+    background-color: rgb(86, 83, 83);
+  }
 }
 
 .mainSection {
@@ -58,7 +57,7 @@
 }
 
 .hero {
-  background-image: url(hero\ shape\ 8.png);
+  background-image: url(./img/hero\ shape\ 8.png);
   background-repeat: no-repeat;
   background-size: 50% 92vh;
   z-index: 1;
@@ -71,7 +70,6 @@
   text-align: center;
   margin-top: 40px;
 }
-
 
 .hero .row img {
   height: 450px;
@@ -86,29 +84,16 @@
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
-  animation:nav linear;
+  animation: nav linear;
   animation-timeline: scroll();
   animation-range: entry 0 cover 100%;
 }
-/* .navMenu ul {
-  display: flex;
-  background-color: transparent;
-  text-align: center;
-} */
-
-/* .navMenu ul li {
-  margin-right: 50px;
-  list-style: none;
-/* } 
-.cardLogo {
-  display: flex;
-  justify-content: center;
-  height: 30px;
-  width: 30px;
-  align-items: center;
+.hero .navbar a img {
+  height: 50px;
+  width: auto;
+  border-radius: 50px;
+  color: white;
 }
-
-/* State section */
 
 .stateSection {
   display: flex;
@@ -278,7 +263,6 @@
   width: 70px;
   border-radius: 100%;
   padding: 0;
-
 }
 .productSection .checkBox {
   font-size: 15px;
@@ -479,6 +463,10 @@
   color: rgb(158, 99, 214);
 }
 
+.cardChild {
+  width: 18rem;
+}
+
 /* slide Show */
 .slideShow {
   animation: slideShow linear;
@@ -490,7 +478,6 @@
   animation-timeline: view();
   animation-range: entry 0 cover 20%;
 }
-
 
 @keyframes slideShow {
   from {
@@ -506,18 +493,24 @@
 }
 
 @keyframes slideIn {
-  from { transform: translateX(-30%);
-  opacity: 0.5;
+  from {
+    transform: translateX(-30%);
+    opacity: 0.5;
   }
-  to { transform: translateX(0);
-  opacity: 1; }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 @keyframes slideOut {
-  from { transform: translateX(30%);
-  opacity: 0.5;
+  from {
+    transform: translateX(30%);
+    opacity: 0.5;
   }
-  to { transform: translateX(0%);
-  opacity: 1; }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 /* Media Quieries */
@@ -534,7 +527,7 @@
   .mainCol {
     padding: 17px;
   }
-  .mainHero .col{
+  .mainHero .col {
     padding: 0;
   }
 
@@ -544,6 +537,7 @@
 
   .cardChild {
     margin-top: 15px;
+    width: 18rem;
   }
 }
 
@@ -564,7 +558,7 @@
   }
 
   .navbar {
-    padding-left: 20px;
+    padding-left: 100px;
   }
 
   .text {
@@ -601,7 +595,6 @@
   }
   .container .row {
     flex-direction: column;
-  
   }
   /* .columns{
     flex-direction: column;
@@ -625,7 +618,7 @@
     justify-content: center;
     text-align: center;
   }
-  .hero{
+  .hero {
     background-image: none;
   }
   .navMenu ul {
@@ -636,19 +629,17 @@
     flex-direction: column;
     padding-top: 100px;
     margin-left: 0;
-}
-.mainHero .col{
-  padding:10px 0px 0 ;
-}
-
+  }
+  .mainHero .col {
+    padding: 10px 0px 0;
+  }
 
   .new {
-    
     position: absolute;
     border-radius: 100%;
     top: -30px;
     right: 0px;
-    background-color: #E77C40;
+    background-color: #e77c40;
     height: 80px;
     width: 80px;
     display: block;
@@ -674,7 +665,7 @@
     /* top: 750px; */
     /* padding-top: 20px; */
   }
-  
+
   .cardSection {
     display: flex;
     justify-content: center;
@@ -705,6 +696,22 @@
     width: 100%;
   }
   .inputField button {
+    padding: 0;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo {
+    height: 25px;
+    width: 25px;
+  }
+  .navbar {
+    padding-left: 0;
+  }
+  .cardChild {
+    width: 12rem;
+  }
+  .columns .col {
     padding: 0;
   }
 }

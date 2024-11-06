@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup Buttons</title>
+  <style>
+    /* Basic styling */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Button container */
+    .button-container {
+      display: flex;
+      position: relative;
+      width: 300px;
+      height: 50px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Background slide */
+    .background-slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #333;
+      transition: transform 0.4s ease;
+      z-index: 1;
+    }
+
+    /* Individual buttons */
+    .button {
+      position: relative;
+      flex: 1;
+      color: #333;
+      font-size: 16px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 2;
+      transition: color 0.3s;
+    }
+
+    .button-left {
+      border-right: 1px solid #333;
+    }
+
+    /* Button hover and active color */
+    .button:hover {
+      color: #fff;
+    }
+
+    /* Content area styling */
+    .content {
+      margin-top: 20px;
+      width: 300px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .content h2 {
+      margin: 0 0 10px;
+    }
+
+    .content p {
+      margin: 0;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Button Container -->
+  <div class="button-container">
+    <!-- Moving background -->
+    <div class="background-slide" id="backgroundSlide"></div>
+
+    <!-- Buttons -->
+    <div class="button button-left" onclick="showContent('login')">Login</div>
+    <div class="button button-right" onclick="showContent('signup')">Signup</div>
+  </div>
+
+  <!-- Content Area -->
+  <div class="content" id="content">
+    <h2>Welcome</h2>
+    <p>Click a button above to see more details.</p>
+  </div>
+
+  <script>
+    // Function to move the background and show relevant content
+    function showContent(type) {
+      const backgroundSlide = document.getElementById("backgroundSlide");
+      const content = document.getElementById("content");
+
+      if (type === "signup") {
+        backgroundSlide.style.transform = "translateX(100%)";
+        content.innerHTML = `
+          <h2>Signup</h2>
+          <p>Welcome! Please create an account by filling out your details.</p>
+        `;
+      } else {
+        backgroundSlide.style.transform = "translateX(0)";
+        content.innerHTML = `
+          <h2>Login</h2>
+          <p>Welcome back! Please enter your credentials to log in.</p>
+        `;
+      }
+    }
+  </script>
+
+</body>
+</html>

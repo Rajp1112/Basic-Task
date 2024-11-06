@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Signup Form</title>
+  <link rel="stylesheet" href="login.css">
+ 
+</head>
+<body>
+
+ 
+  <div class="button-container">
+   
+    <div class="background-slide" id="backgroundSlide"></div>
+
+    
+    <div class="button button-left" id="button" onclick="showContent('login') ">Login</div>
+    <div class="button button-right" onclick="showContent('signup')">Signup</div>
+  </div>
+
+  
+  <div class="content active" id="loginContent">
+    <h2>Login</h2>
+   
+    <form>
+      <input  placeholder="Email" required />
+      <input  placeholder="Password" required />
+      <div class="forgatPass">
+        <a href="forgot_pass.html">Forgot password? </a>
+    </div>
+      <button type="submit">Login</button>
+      <div class="signupBtn">
+        <span>Not a member? <a href="">Signup now</a></span>
+    </div>
+    </form>
+  </div>
+
+  <div class="content" id="signupContent">
+    <h2>Signup</h2>
+   
+    <form>
+      <input  placeholder="Email" required />
+      <input  placeholder="Password" required />
+      <input  placeholder="Confirm Password" required />
+      <button >Sign Up</button>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
