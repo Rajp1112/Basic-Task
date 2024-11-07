@@ -10,6 +10,10 @@
     width: 6px;
   }
 
+
+  :root{
+    --blue:#263053;
+  }
   /* Track */
   ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
@@ -42,11 +46,12 @@
     color: white;
   }
   1% {
-    background-color: rgb(86, 83, 83);
-    color: black;
+    background-color: #263053;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   100% {
-    background-color: rgb(86, 83, 83);
+    background-color: #26335d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
