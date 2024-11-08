@@ -93,11 +93,11 @@ section {
     transition: all 0.5s ease-in-out;
 }
 
-.moveslider2 {
+.moveSlider2 {
     left: 250px;
 }
 
-.form-section2 {
+.formSection2 {
     height: 500px;
     width: 1000px;
     padding: 20px 0;
@@ -106,13 +106,13 @@ section {
     transition: all 0.5s ease-in-out;
     left: 0px;
 }
-.form-section-move2 {
+.formSectionMove2 {
     left: -500px;
 }
 
 
-.login-box2,
-.signup-box2 {
+.loginBox2,
+.signupBox2 {
     height: 100%;
     width: 500px;
     display: flex;
@@ -121,11 +121,11 @@ section {
     /* padding-left: 50px; */
 }
 
-.login-box2 {
+.loginBox2 {
     gap: 20px;
 }
 
-.signup-box2 {
+.signupBox2 {
     gap: 20px;
 }
 
@@ -141,7 +141,7 @@ section {
     font-size: 18px;
 }
 
-.clkbtn2 {
+.clkBtn2 {
     height: 50px;
     width: 150px;
     border-radius: 20px;
@@ -152,7 +152,7 @@ section {
     cursor: pointer;
     transition: 0.5s;
 }
-.clkbtn2:hover{
+.clkBtn2:hover{
     transform: scale(1.1);
 }
 .forgatPass2{
@@ -203,21 +203,21 @@ section {
         left: 50px;
     }
 
-    .moveslider2 {
+    .moveSlider2 {
         left: 150px;
     }
 
-    .form-section2 {
+    .formSection2 {
         height: 500px;
         width: 600px;
     }
 
-    .form-section-move2 {
+    .formSectionMove2 {
         left: -300px;
     }
 
-    .login-box2,
-    .signup-box2 {
+    .loginBox2,
+    .signupBox2 {
         height: 100%;
         width: 300px;
     }
@@ -228,7 +228,7 @@ section {
         font-size: 15px;
     }
 
-    .clkbtn2 {
+    .clkBtn2 {
         height: 50px;
         width: 130px;
         font-size: 19px;
@@ -266,21 +266,21 @@ section {
         left: 27px;
     }
 
-    .moveslider2 {
+    .moveSlider2 {
         left: 127px;
     }
 
-    .form-section2 {
+    .formSection2 {
         height: 500px;
         width: 500px;
     }
 
-    .form-section-move2 {
+    .formSectionMove2 {
         left: -250px;
     }
 
-    .login-box2,
-    .signup-box2 {
+    .loginBox2,
+    .signupBox2 {
         height: 100%;
         width: 250px;
     }
@@ -291,7 +291,7 @@ section {
         font-size: 15px;
     }
 
-    .clkbtn2 {
+    .clkBtn2 {
         height: 50px;
         width: 130px;
         font-size: 19px;
