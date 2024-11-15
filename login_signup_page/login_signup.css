@@ -8,6 +8,7 @@
 :root{
     --blue:#263053;
     --orange:#FF7B52;
+    --purple:rgb(158, 99, 214);
   }
 
   header nav{
@@ -51,7 +52,7 @@ section {
 .container2 {
     height: 400px;
     width: 500px;
-    background-color: var(--orange);
+    background-color: white;
     /* box-shadow: 8px 8px 20px rgb(128, 128, 128); */
     position: relative;
     overflow: hidden;
@@ -78,7 +79,7 @@ section {
     outline: none;
     background-color: transparent;
     position: relative;
-    color: white;
+    color: black;
     cursor: pointer;
 }
 
@@ -146,7 +147,7 @@ section {
     width: 150px;
     border-radius: 20px;
     background:var(--blue);
-    color: white;
+    color: black;
     font-size: 22px;
     border: none;
     cursor: pointer;
