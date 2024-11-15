@@ -10,9 +10,8 @@
     width: 6px;
   }
 
-
-  :root{
-    --blue:#263053;
+  :root {
+    --blue: #263053;
   }
   /* Track */
   ::-webkit-scrollbar-track {
@@ -32,7 +31,6 @@
   }
 }
 .logoSec {
- 
   font-size: 30px;
   text-decoration: none;
 }
@@ -48,7 +46,7 @@
     background-color: #263053;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    .hero .navbar a img{
+    .hero .navbar a img {
       color: white;
     }
   }
@@ -103,11 +101,15 @@
   color: white;
 }
 
+
 .stateSection {
   display: flex;
   flex-wrap: wrap;
   background-color: #26335d;
   flex-direction: column;
+}
+.stateText hr {
+  display: none;
 }
 
 .container .row {
@@ -548,8 +550,17 @@
     width: 18rem;
   }
 }
-
+.stateText hr {
+  display: none;
+}
 @media (max-width: 768px) {
+  .stateText hr {
+    display: block;
+    width: 50%;
+    color: white;
+    margin-left: 25%;
+    height: 1px;
+  }
   .mainHero {
     flex-direction: column;
     padding-top: 100px;
@@ -618,6 +629,12 @@
   }
 }
 @media (max-width: 480px) {
+  .stateText hr {
+    display: block;
+    width: 50%;
+    color: white;
+    margin-left: 25%;
+  }
   .mainCol {
     padding: 15px 0;
   }

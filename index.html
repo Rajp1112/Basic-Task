@@ -27,23 +27,23 @@
             <div class="hero" id="home">
                   <nav class="navbar outerNav navbar-expand-lg navbar-light" style="width: 100%; position: fixed;top: 0;z-index: 999;">
                       <div class="container-fluid">
-                        <a class="navbar-brand " href="#home" style="color:white ; font-weight: bold;" ><img src="./img/file.png" alt="" ></a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand " href="#home" style="color:white ; font-weight: bold;" ><img width="48" height="48" src="https://img.icons8.com/color/48/redux.png" alt="redux"/></a>
+                        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white; border-color: white; background-color: white;">
                           <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                              <a class="nav-link " aria-current="page" href="#home" style="color:white ;font-weight: 500;">Home</a>
+                              <a class="nav-link navMenu" aria-current="page" href="#home" style="color:white ;font-weight: 500;">Home</a>
+                            </li>
+                            <li class="">
+                              <a class="nav-link navMenu" href="#product" style="color:white ;font-weight: 500;">Product</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#product" style="color:white ;font-weight: 500;">Product</a>
+                              <a class="nav-link navMenu" href="#price" style="color:white ;font-weight: 500;">Price</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#price" style="color:white ;font-weight: 500;">Price</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#contact"style="color:white ;font-weight: 500;" >Contact</a>
+                              <a class="nav-link navMenu" href="#contact"style="color:white ;font-weight: 500;" >Contact</a>
                             </li>
                            
                           </ul>
@@ -143,20 +143,24 @@
     <div class="container slideShow">
         <div class="row">
             <div class=" col stateText">
-                <h1>15K</h1>
+                <h1 class="counteNumber" data-number="15">0</h1>
                 <span class="stateProp">Happy Customer</span>
+                <hr>
             </div>
             <div class="col stateText">
-                <h1>150K</h1>
+                <h1 class="counteNumber" data-number="150">0</h1>
                 <span class="stateProp">Monthly Visitor</span>
+               <hr>
             </div>
             <div class="col stateText">
-                <h1>15</h1>
+                <h1 class="counteNumber" data-number="15">0</h1>
                 <span class=" col stateProp">Countries Worldwide</span>
+                <hr>
             </div>
             <div class=" col stateText">
-                <h1>100+</h1>
+                <h1 class="counteNumber" data-number="100">0</h1>
                 <span class="stateProp">Top Partner</span>
+                <hr>
             </div>
         </div>
     </div>
@@ -788,7 +792,7 @@
         </div>
     </footer>
 </div>
-
+<script src="index.js"></script>
 </body>
 
 </html>
